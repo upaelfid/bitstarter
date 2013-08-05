@@ -104,13 +104,13 @@
       }
      
       </style>
+<!--Start Google Analytics code-->
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-42932441-1']);
 <!-- Enable herokuapp.com subdomains -->
-  _gaq.push(['_setDomainName','herokuapp.com']);
-
+<!--  _gaq.push(['_setDomainName','herokuapp.com']);-->
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -120,7 +120,7 @@
   })();
 
 </script>
-
+<!--End Google Analytics code-->
     </head>
     <body>
       <!--Mobile-friendly navbar adapted from example. -->
@@ -196,9 +196,11 @@
 			  </div>
 			 </div>
 			 <div class="span6 offset3 order">
-			   <!-- Standard Bootstrap button. -->
+			   <!-- Bitcoin button. -->
 			   <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-			   <button class="btn btn-success btn-large">Preorder</button>
+
+			   <a class="coinbase-button" data-code="21d82b27c44a01bf5329718dd8ab39a7" data-button-style="custom_large" href="https://coinbase.com/checkouts/21d82b27c44a01bf5329718dd8ab39a7">Preorder with Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+
 			  </div>
 			  <div class="span8 offset2 social">
 			    <!-- Social buttons are not included in default Bootstrap. -->
@@ -208,8 +210,8 @@
 			      <a class="addthis_button_preferred_1"></a>
 			      <a class="addthis_button_preferred_2"></a>
 			      <a class="addthis_button_preferred_3"></a>
-			      <a class="addthis_button_preferred_4"></a>
-			      <a class="addthis_button_compact"></a>
+			      <!--<a class="addthis_button_preferred_4"></a>-->
+			     <!-- <a class="addthis_button_compact"></a>-->
 			      <a class="addthis_counter addthis_bubble_style"></a>
 			    </div>
 			    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
@@ -361,7 +363,7 @@
 	     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	     ga('create', 'UA-42932441-1', 'herokuapp.com');
+	     ga('create', 'UA-42932441-1', 'upaelfid-bitstarter-mooc.herokuapp.com');
 	     ga('send', 'pageview');
 <!--https://d396qusza40orc.cloudfront.net/startup/images/google-analytics-figure.png-->
 	   </script>
